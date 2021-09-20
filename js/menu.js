@@ -9,32 +9,17 @@
    $('a').click(function(e){
        e.preventDefault()
 
-       var url = $(this).attr('href')
+       var url = $(this).attr('href')// add na variável o href
        $('#' + url).show()
-     
-       switch(url){
-        case 'home':
-          $('#contact').hide()
-          $('#about').hide()
-          $('#action').hide()
-          break
-        case 'contact':
-          $('#home').hide()
-          $('#about').hide()
-          $('#action').hide()
-          break
-        case 'about':
-          $('#contact').hide()
-          $('#home').hide()
-          $('#action').hide()
-          break
-        case 'action':
-          $('#contact').hide()
-          $('#home').hide()
-          $('#about').hide()
-          break
-       }        
-       
+
+       const urls = ['contact','home','about','action']
+      
+      //varre o vetor e o que for diferente aplica o hide
+       for(let x in urls){ 
+         if(urls[x] != url){
+           $('#' + urls[x]).hide()
+         }
+       }
 
 
        
