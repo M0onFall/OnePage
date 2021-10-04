@@ -1,3 +1,5 @@
+
+
 a {
  text-decoration: none;
  font-size: 1.5rem;
@@ -7,4 +9,15 @@ a {
 #menu,#contact,#about,#home,#action{
  display: none;
 }
+div h2{
+  text-align: center;
+  margin: 3rem;
+}
+
+
+.texto-css{
+ text-shadow: 2px 2px 3px #000000;
+
+}
+
 
